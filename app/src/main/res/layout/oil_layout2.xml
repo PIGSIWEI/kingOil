@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_title_include">
+
+    </include>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_oil_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/x20"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginBottom="@dimen/x15"
+            android:layout_marginTop="@dimen/x15"
+            android:text="@string/oil_msg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLength="2"
+            android:id="@+id/et_oil_gun"
+            android:layout_marginRight="@dimen/x70"
+            android:layout_marginLeft="@dimen/x20"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:hint="@string/oil_msg3"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30" />
+    </LinearLayout>
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_oil_gun"
+        android:textColor="@color/title_color"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_gravity="center"
+        android:text="oil_gun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:enabled="false"
+        android:textSize="16sp"
+        android:id="@+id/btn_oil_confirm"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:background="#C3BAB0"
+        android:textColor="@color/white"
+        android:text="@string/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40" />
+</LinearLayout>

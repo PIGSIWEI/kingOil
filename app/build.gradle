@@ -1,0 +1,139 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.ruoyu.pigroad.Oilkelai"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+
+
+        def password = "ruoyuwl"
+        def alias = "key0"
+        def filePath = "../facescan.jks"  //如  ../facesharp.jks//签名文件路径
+
+        debug {
+            keyAlias alias
+            keyPassword password
+            storeFile file(filePath)
+            storePassword(password)
+        }
+        release {
+            keyAlias alias
+            keyPassword password
+            storeFile file(filePath)
+            storePassword(password)
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+//repositories {
+//    flatDir {
+//        dirs 'libs', project(':facesdk').file('libs')
+//    }
+//}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.0'
+
+    //noinspection GradleCompatible
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //百度地图SDK
+    implementation files('libs/BaiduLBS_Android.jar')
+
+    //黄油刀
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    //Glide图片处理
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+
+    //facebook
+    implementation 'com.facebook.rebound:rebound:+'
+
+    //OKGO
+    implementation 'com.lzy.net:okgo:3.0.4'
+
+    //cardslidepanel library
+    implementation project(':library')
+    implementation project(':LoadingDialog')
+    implementation project(':djkeyboard')
+    //implementation project(':facesdk')
+
+    //cardview
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:25.2.0'
+
+    //recyleview
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+
+    //时间 选择器
+    implementation 'com.contrarywind:Android-PickerView:4.1.6'
+
+    //地址选择器
+    implementation 'com.github.ywp0919:AddressPickerLib:+'
+
+    //TDialog
+    implementation 'com.timmy.tdialog:tdialog:2.0.0'
+
+    //优惠券样式
+    implementation 'com.github.dongjunkun:CouponView:+'
+
+    //车牌 选择器
+    implementation 'com.parkingwang:keyboard:0.6.1'
+
+    //banner 轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //预加载
+    implementation 'com.github.florent37:fiftyshadesof:1.0.0'
+
+    //加载动画
+    implementation 'com.zyao89:zloading:1.0.11'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation files('libs/Msc.jar')
+    implementation files('libs/AMap_Search_V6.1.0_20180330.jar')
+    implementation files('libs/AMap_Location_V4.2.0_20180809.jar')
+    implementation files('libs/AMap3DMap_6.4.1_AMapNavi_6.3.0_20180906.jar')
+    implementation files('libs/alipaySdk-20180601.jar')
+
+    //GIF加载
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    implementation files('libs/FaceSDK.jar')
+    implementation files('libs/baidu_license.jar')
+    implementation files('libs/ast.jar')
+}
+

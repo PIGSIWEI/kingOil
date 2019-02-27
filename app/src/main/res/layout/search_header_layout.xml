@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F6F6"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/x10"
+    android:paddingTop="@dimen/x10">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x5"
+            android:layout_marginStart="@dimen/x8"
+            android:background="@drawable/default_generalsearch_sugg_searchicon_normal" />
+
+        <AutoCompleteTextView
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape"
+            android:hint="输入起点"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x30"
+            android:paddingStart="@dimen/x30"
+            android:paddingTop="@dimen/x5"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@drawable/shape_textcursor" />
+
+        <ProgressBar
+            android:id="@+id/search_loading"
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x2"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

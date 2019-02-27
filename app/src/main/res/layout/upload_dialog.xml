@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_margin="@dimen/x10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_pop_album"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:text="本地相册"
+            android:background="#ffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+        <Button
+            android:id="@+id/btn_pop_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:text="相机拍摄"
+            android:background="#ffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45"
+            android:layout_marginTop="@dimen/x10"
+            android:background="#ffff"
+            android:text="取消"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

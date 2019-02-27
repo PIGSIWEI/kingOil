@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<RelativeLayout android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/activity_title_include"></include>
+
+    <RelativeLayout
+        android:layout_below="@id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/x50">
+
+        <com.ruoyu.pigroad.myapplication.Widget.TexturePreviewView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_below="@id/ll_title"
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/closeIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/detect_close" />
+
+
+    <ImageView
+            android:id="@+id/texture_view"
+            android:scaleType="fitCenter"
+            android:layout_width="160dp"
+            android:layout_height="160dp"/>
+
+    <com.ruoyu.pigroad.myapplication.Widget.FaceRoundView
+        android:layout_below="@id/ll_title"
+
+        android:visibility="invisible"
+        android:id="@+id/rect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <com.ruoyu.pigroad.myapplication.Widget.TCircleProgressView
+        app:tcpv_animation_duration="1"
+        app:tcpv_blank_angle="45"
+        app:tcpv_border_width="5dp"
+        app:tcpv_hint_semicircle_rate="0.3"
+        app:tcpv_hint_show="false"
+        app:tcpv_hint_text_color="#ffffff"
+        app:tcpv_hint_text_padding="8dp"
+        app:tcpv_start_angle="90"
+        app:tcpv_total_progress="100"
+        android:layout_below="@id/ll_title"
+        android:id="@+id/progress_view"
+        android:layout_marginRight="@dimen/x50"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x130"
+        android:textColor="#2ba2f9"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/success_image"
+        android:layout_width="@dimen/x45"
+        android:layout_height="@dimen/x45"
+        android:src="@drawable/icon_success"
+        android:visibility="gone" />
+</RelativeLayout>

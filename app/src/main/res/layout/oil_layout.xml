@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_weight="1"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <include layout="@layout/activity_title_include">
+       </include>
+
+       <LinearLayout
+           android:focusable="true"
+           android:focusableInTouchMode="true"
+           android:layout_marginTop="10dp"
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:maxLength="2"
+               android:id="@+id/et_oil_gun"
+               android:singleLine="true"
+               android:textAlignment="center"
+               android:layout_marginRight="10dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:background="@color/activty_backgroud"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="37dp" />
+           <TextView
+               android:layout_marginBottom="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_gravity="center"
+               android:layout_marginRight="10dp"
+               android:padding="10dp"
+               android:textAlignment="center"
+               android:textColor="@color/white"
+               android:background="@color/title_color"
+               android:text="@string/oil_msg1"
+               android:layout_weight="3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:id="@+id/et_oil_money"
+               android:singleLine="true"
+               android:textAlignment="center"
+               android:layout_marginRight="10dp"
+               android:layout_gravity="center"
+               android:layout_marginLeft="10dp"
+               android:background="@color/activty_backgroud"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="37dp" />
+           <TextView
+               android:layout_marginBottom="5dp"
+               android:layout_marginTop="5dp"
+               android:layout_gravity="center"
+               android:layout_marginRight="10dp"
+               android:padding="10dp"
+               android:textAlignment="center"
+               android:textColor="@color/white"
+               android:background="@color/title_color"
+               android:text="@string/oil_money"
+               android:layout_weight="3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/tv_m100"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:textAlignment="center"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:background="@color/white"
+               android:text="100"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/tv_m200"
+               android:layout_marginRight="10dp"
+               android:textAlignment="center"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:background="@color/white"
+               android:text="200"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/tv_m300"
+               android:layout_marginRight="10dp"
+               android:textAlignment="center"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:background="@color/white"
+               android:text="300"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/tv_m400"
+               android:layout_marginRight="10dp"
+               android:textAlignment="center"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:background="@color/white"
+               android:text="400"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+       <RelativeLayout
+            android:visibility="gone"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:background="@color/white"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginTop="10dp"
+               android:text="@string/oil_msg2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <Switch
+               android:id="@+id/swi"
+               android:layout_marginRight="20dp"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+
+       <LinearLayout
+           android:visibility="gone"
+           android:id="@+id/ll_oil_bill"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:background="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:text="@string/oil_bill_type"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <RelativeLayout
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <RadioButton
+                       android:id="@+id/rb_oil_company"
+                       android:layout_centerVertical="true"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp" />
+                   <TextView
+                       android:id="@+id/tv_oil_company"
+                       android:layout_marginLeft="10dp"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@id/rb_oil_company"
+                       android:text="@string/oil_company"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <RadioButton
+                       android:id="@+id/rb_oil_person"
+                       android:layout_marginLeft="10dp"
+                       android:layout_toRightOf="@id/tv_oil_company"
+                       android:layout_centerVertical="true"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp" />
+                   <TextView
+                       android:id="@+id/tv_oil_person"
+                       android:layout_marginLeft="10dp"
+                       android:layout_centerVertical="true"
+                       android:layout_toRightOf="@id/rb_oil_person"
+                       android:text="@string/oil_person"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </RelativeLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:background="@color/white"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="10dp"
+                   android:text="@string/oil_bill_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <EditText
+                   android:id="@+id/et_oil_name"
+                   android:textAlignment="center"
+                   android:layout_marginLeft="30dp"
+                   android:singleLine="true"
+                   android:textSize="13sp"
+                   android:hint="@string/oil_company_hint"
+                   android:background="@null"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:visibility="gone"
+               android:id="@+id/ll_bill_number"
+               android:layout_marginRight="10dp"
+               android:layout_marginLeft="10dp"
+               android:background="@color/white"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginTop="10dp"
+                   android:text="@string/oil_bill_number"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <EditText
+                   android:id="@+id/et_oil_number"
+                   android:textAlignment="center"
+                   android:layout_marginLeft="30dp"
+                   android:singleLine="true"
+                   android:textSize="13sp"
+                   android:hint="@string/oil_person_hint"
+                   android:background="@null"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+           </LinearLayout>
+
+           <TextView
+               android:drawablePadding="5dp"
+               android:padding="5dp"
+               android:drawableLeft="@drawable/choose_done_line"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:textSize="13sp"
+               android:text="@string/default_use"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:textColor="@color/colorPrimary"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_marginLeft="10dp"
+               android:textColor="@color/title_color"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:background="@drawable/btn_next_square"
+        android:textColor="@color/white"
+        android:text="下一步"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

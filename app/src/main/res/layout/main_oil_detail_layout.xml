@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activty_backgroud"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_include"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x170">
+
+                <ImageView
+                    android:id="@+id/iv_oil_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x170"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#60000000">
+
+                    <TextView
+                        android:id="@+id/tv_oil_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/x10"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginTop="@dimen/x10"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_oil_logo"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35"
+                    android:layout_marginBottom="@dimen/x15"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_marginTop="@dimen/x15"
+                    android:background="@drawable/icon_oil_logo" />
+
+                <TextView
+                    android:id="@+id/tv_oil_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/x15"
+                    android:layout_toRightOf="@id/iv_oil_logo"
+                    android:text="name"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_oil_adress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_oil_name"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_toRightOf="@id/iv_oil_logo"
+                    android:text="address" />
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:id="@+id/ll_daohang"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/x25"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_marginTop="@dimen/x10"
+                    android:background="@drawable/btn_daohang_circle"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="导航"
+                        android:textColor="@color/title_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_oil_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/ll_daohang"
+                    android:layout_marginRight="@dimen/x15"
+                    android:layout_marginTop="@dimen/x2"
+                    android:text="distance"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_pay_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="@string/pay_type"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/iv_wx"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_below="@id/tv_pay_type"
+                    android:layout_marginBottom="@dimen/x15"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:background="@drawable/icon_wx" />
+
+                <TextView
+                    android:id="@+id/tv_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_pay_type"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_marginTop="@dimen/x2"
+                    android:layout_toRightOf="@id/iv_wx"
+                    android:text="微信支付"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/iv_ali"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:layout_below="@id/tv_pay_type"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_toRightOf="@id/tv_wx"
+                    android:background="@drawable/icon_ali" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_pay_type"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_marginTop="@dimen/x2"
+                    android:layout_toRightOf="@id/iv_ali"
+                    android:text="@string/ali_pay"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_oil_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="油价信息"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_below="@id/tv_oil_info"
+                    android:id="@+id/line"
+                    android:background="@color/activty_backgroud"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_below="@id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x37"
+        android:background="@drawable/btn_next_square"
+        android:text="优惠支付"
+        android:textColor="@color/white" />
+</LinearLayout>

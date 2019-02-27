@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/activity_title_include"></include>
+
+   <LinearLayout
+       android:layout_below="@id/ll_title"
+       android:visibility="gone"
+       android:id="@+id/ll_info"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:layout_marginLeft="@dimen/x10"
+           android:layout_marginTop="@dimen/x10"
+           android:text="@string/can_use_coupon"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/recycler_view"
+           android:layout_marginTop="@dimen/x10"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+       </android.support.v7.widget.RecyclerView>
+   </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_null"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_null" />
+
+        <TextView
+            android:layout_marginTop="@dimen/x10"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_null"
+            android:layout_gravity="center"
+            android:text="@string/coupon_null" />
+    </RelativeLayout>
+
+</RelativeLayout>

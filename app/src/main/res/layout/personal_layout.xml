@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:background="@drawable/toolbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x160" />
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x10"
+        android:background="@drawable/icon_back"
+        android:layout_width="@dimen/x25"
+        android:layout_height="@dimen/x25" />
+    <ImageView
+        android:id="@+id/iv_user_logo"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/x50"
+        android:background="@drawable/icon_user"
+        android:layout_height="@dimen/x50" />
+    <TextView
+        android:id="@+id/tv_user_phone"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_user_logo"
+        android:textColor="@color/white"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@id/tv_user_phone"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tag_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_authentication"
+            android:paddingRight="@dimen/x10"
+            android:paddingLeft="@dimen/x10"
+            android:paddingBottom="@dimen/x3"
+            android:paddingTop="@dimen/x3"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="@string/uncertified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+  <ScrollView
+      android:layout_below="@id/iv_bg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <LinearLayout
+              android:background="@drawable/ll_btn_square"
+              android:clickable="true"
+              android:layout_marginTop="@dimen/x20"
+              android:id="@+id/ll_spending"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="@dimen/x23"
+                  android:layout_height="@dimen/x23"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_marginBottom="@dimen/x10"
+                  android:layout_marginTop="@dimen/x10"
+                  android:background="@drawable/icon_pay"
+                   />
+
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_gravity="center"
+                  android:text="@string/spending"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <ImageView
+                  android:layout_marginRight="@dimen/x20"
+                  android:layout_gravity="center"
+                  android:background="@drawable/icon_right"
+                  android:layout_width="@dimen/x20"
+                  android:layout_height="@dimen/x20" />
+          </LinearLayout>
+
+          <ImageView
+              android:layout_below="@id/ll_spending"
+              android:id="@+id/line1"
+              android:background="@color/line_color"
+              android:layout_width="match_parent"
+              android:layout_height="0.7dp" />
+
+          <LinearLayout
+              android:id="@+id/ll_bill"
+              android:layout_below="@id/line1"
+              android:background="@drawable/ll_btn_square"
+              android:clickable="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="@dimen/x23"
+                  android:layout_height="@dimen/x23"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_marginBottom="@dimen/x10"
+                  android:layout_marginTop="@dimen/x10"
+                  android:background="@drawable/icon_bill"
+                   />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_gravity="center"
+                  android:text="@string/bill_manager"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <ImageView
+                  android:layout_marginRight="@dimen/x20"
+                  android:layout_gravity="center"
+                  android:background="@drawable/icon_right"
+                  android:layout_width="@dimen/x20"
+                  android:layout_height="@dimen/x20" />
+          </LinearLayout>
+
+          <ImageView
+              android:layout_below="@id/ll_bill"
+              android:id="@+id/line2"
+              android:background="@color/line_color"
+              android:layout_width="match_parent"
+              android:layout_height="0.7dp" />
+
+
+          <LinearLayout
+              android:id="@+id/ll_car"
+              android:layout_below="@id/line2"
+              android:background="@drawable/ll_btn_square"
+              android:clickable="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="@dimen/x23"
+                  android:layout_height="@dimen/x23"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_marginBottom="@dimen/x10"
+                  android:layout_marginTop="@dimen/x10"
+                  android:background="@drawable/icon_car"
+                   />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_gravity="center"
+                  android:text="@string/car"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <ImageView
+                  android:layout_marginRight="@dimen/x20"
+                  android:layout_gravity="center"
+                  android:background="@drawable/icon_right"
+                  android:layout_width="@dimen/x20"
+                  android:layout_height="@dimen/x20" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/ll_coupon_manager"
+              android:layout_below="@id/ll_car"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/ll_btn_square"
+              android:clickable="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="@dimen/x23"
+                  android:layout_height="@dimen/x23"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_marginBottom="@dimen/x10"
+                  android:layout_marginTop="@dimen/x10"
+                  android:background="@drawable/icon_coupon_manage"
+                   />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_gravity="center"
+                  android:text="@string/coupon_manager"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <ImageView
+                  android:layout_marginRight="@dimen/x20"
+                  android:layout_gravity="center"
+                  android:background="@drawable/icon_right"
+                  android:layout_width="@dimen/x20"
+                  android:layout_height="@dimen/x20" />
+
+
+          </LinearLayout>
+
+
+
+          <LinearLayout
+              android:layout_below="@id/ll_coupon_manager"
+              android:id="@+id/ll_integral_shop"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/ll_btn_square"
+              android:clickable="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="@dimen/x23"
+                  android:layout_height="@dimen/x23"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_marginBottom="@dimen/x10"
+                  android:layout_marginTop="@dimen/x10"
+                  android:background="@drawable/icon_integral_shop"
+                   />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_gravity="center"
+                  android:text="@string/integral_shop"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <ImageView
+                  android:layout_marginRight="@dimen/x20"
+                  android:layout_gravity="center"
+                  android:background="@drawable/icon_right"
+                  android:layout_width="@dimen/x20"
+                  android:layout_height="@dimen/x20" />
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:id="@+id/ll_integral_record"
+              android:layout_marginTop="20dp"
+              android:layout_below="@id/ll_integral_shop"
+              android:background="@drawable/ll_btn_square"
+              android:clickable="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="@dimen/x23"
+                  android:layout_height="@dimen/x23"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_marginBottom="@dimen/x10"
+                  android:layout_marginTop="@dimen/x10"
+                  android:background="@drawable/icon_integral_re"
+                   />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/x10"
+                  android:layout_gravity="center"
+                  android:text="@string/integral_record"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <ImageView
+                  android:layout_marginRight="@dimen/x20"
+                  android:layout_gravity="center"
+                  android:background="@drawable/icon_right"
+                  android:layout_width="@dimen/x20"
+                  android:layout_height="@dimen/x20" />
+
+          </LinearLayout>
+
+
+
+      </RelativeLayout>
+
+  </ScrollView>
+    <Button
+        android:id="@+id/btn_login_exit"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_waring_square"
+        android:text="@string/login_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40" />
+
+</RelativeLayout>

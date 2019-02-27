@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ruoyu.pigroad.myapplication">
+    //地图SDK（包含其搜索功能）需要的基础权限
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--读取权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--导航权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".MapApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_ykl"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon_ykl"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="cb95ef8c3997d117ba233481854d9db5" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="eGrnUwfC1bp17sTvNVXBB0zCQGxum7Hs" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!--主界面-->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+        <!--预加载activity-->
+        <activity
+            android:name=".Ui.AppStartActivity"
+            android:theme="@style/full_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--登录activity-->
+        <activity android:name=".Login.LoginActivity">
+
+        </activity>
+        <!--卡片activity-->
+        <activity
+            android:name=".Ui.CardActivity"
+            android:theme="@style/CardTheme"></activity>
+        <!--支付activity-->
+        <activity android:name=".Ui.PayActivity"></activity>
+        <!--油站2activity-->
+        <activity android:name=".Ui.OilActivity2"></activity>
+        <!--金额activity-->
+        <activity android:name=".Ui.MoneyActivity">
+
+        </activity>
+        <!--优惠券activity-->
+        <activity android:name=".Ui.CouponActivity"></activity>
+        <!--发票activity-->
+        <activity android:name=".Ui.BillActivity"></activity>
+        <!--添加发票activity-->
+        <activity android:name=".Ui.AddBillActivity"></activity>
+        <!--编辑发票activity-->
+        <activity android:name=".Ui.EditBillActivity"></activity>
+        <!--个人中心-->
+        <activity
+            android:name=".Ui.PersonalActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+        <!--消费记录activity-->
+        <activity android:name=".Ui.RecordActivity"></activity>
+        <!--专车认证-->
+        <activity android:name=".Ui.SpecialCarActivity">
+
+        </activity>
+        <!--填写信息acticity-->
+        <activity android:name=".Ui.InputInfoActivity">
+
+        </activity>
+        <!--上传activity-->
+        <activity android:name=".Ui.UploadActivity">
+
+        </activity>
+        <!--优惠价管理-->
+        <activity android:name=".Ui.CouponManagerActivity">
+
+        </activity>
+        <!--提交资料activity-->
+        <activity android:name=".Ui.DataActivity"></activity>
+        <!--优惠券详情activity-->
+        <activity android:name=".Ui.CouponDetailActivity"></activity>
+        <!--发票管理-->
+        <activity android:name=".Ui.BillManageActivity"></activity>
+        <!--新主页面-->
+        <activity android:name=".MainActivity2">
+
+        </activity>
+        <!--个人中心发票管理-->
+        <activity android:name=".Ui.PersonalBillManager"></activity>
+        <!--油站详情-->
+        <activity android:name=".Ui.MainOilDetailActivity"></activity>
+        <!--导航activity-->
+        <activity
+            android:name=".GaodeMap.IndexActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".GaodeMap.BasicNaviActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"></activity>
+
+        <!--ali activity-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!--支付完成activity-->
+        <activity android:name=".Ui.PayFinishActivity"></activity>
+
+        <!--人脸activity-->
+        <activity android:name=".Ui.FaceActivity">
+
+        </activity>
+
+        <activity
+            android:name=".Widget.FaceDetectActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <!--人脸注册-->
+        <activity android:name=".Ui.FaceReActivity">
+
+        </activity>
+
+        <!--人脸扫描-->
+        <activity android:name=".Ui.FaceScanActivity"></activity>
+
+        <!--实时人脸扫描-->
+        <activity
+            android:name=".Widget.DetectLoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--人脸识别 结果-->
+        <activity android:name=".Ui.LoginResultActivity"></activity>
+
+        <!--人脸更新-->
+        <activity android:name=".Ui.UpFaceActivity"></activity>
+
+        <!--人脸更新扫描-->
+        <activity android:name=".Ui.UpFaceReActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--人脸支付-->
+        <activity android:name=".Ui.FaceCarActivity"></activity>
+    </application>
+
+</manifest>

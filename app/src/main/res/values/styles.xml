@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="CardTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/framlaylout_color</item>
+        <item name="android:windowIsTranslucent">true</item><!--activity窗口具有透明属性-->
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophide</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <!--键盘样式-->
+    <!--输入框按键样式，最左最右键样式设置-->
+    <style name="PWKInputItemStyleKey" parent="PWKInputItemStyle_BORDER_KEY" />
+    <!--输入框外部样式-->
+    <style name="PWKInputViewStyle" parent="PWKInputViewStyle_MIXED" />
+     <!-- Application theme. -->
+
+       
+
+    <style name="full_theme" parent="Theme.AppCompat.Light.NoActionBar">
+
+             
+          <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+
+                <item name="android:windowNoTitle">true</item>    
+
+                <item name="android:windowFullscreen">true</item>   
+
+               
+        <item name="android:windowIsTranslucent">true</item>
+
+
+           
+    </style>
+
+
+</resources>

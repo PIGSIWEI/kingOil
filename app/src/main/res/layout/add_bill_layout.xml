@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_title_include"></include>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x15"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_bill_title"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="@string/bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_bill_title"
+            android:layout_toRightOf="@id/tv_bill_title"
+            android:singleLine="true"
+            android:maxLength="25"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:textSize="14sp"
+            android:hint="@string/must_input"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/tv_et_listener"
+            android:layout_marginTop="@dimen/x90"
+            android:layout_marginRight="@dimen/x25"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:text="0/25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:text="@string/bill_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginLeft="@dimen/x10"
+            android:textSize="14sp"
+            android:hint="@string/bill_number_tip"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/x10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/cb_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_gravity="center"
+        android:text="@string/default_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_save"
+        android:layout_marginTop="@dimen/x25"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:textColor="@color/white"
+        android:text="@string/save"
+        android:background="@color/keyboard_press_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40" />
+
+
+</LinearLayout>

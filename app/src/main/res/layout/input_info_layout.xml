@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/activity_title_include">
+
+    </include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="13sp"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_weight="1"
+                android:text="@string/choose_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_right"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15" />
+            <TextView
+                android:textSize="13sp"
+                android:textColor="@color/title_color"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:text="@string/input_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_right_green"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15" />
+            <TextView
+                android:textSize="13sp"
+
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:text="@string/upload_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/icon_right"
+                android:layout_width="@dimen/x15"
+                android:layout_height="@dimen/x15" />
+            <TextView
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_weight="1"
+                android:text="@string/confirm_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/x20"
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:text="@string/identification_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_car_type"
+                android:textColor="@color/text_hint_color"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="@string/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/text_hint_color"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_gravity="center"
+                android:text="@string/phone_ispass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/x20"
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/ll_city"
+            android:background="@drawable/ll_btn_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:text="@string/be_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_marginRight="@dimen/x5"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="@dimen/x20"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_right"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20" />
+        </LinearLayout>
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:clickable="true"
+            android:id="@+id/ll_car_number"
+            android:background="@drawable/ll_btn_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/x10"
+                android:text="@string/car_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--<EditText-->
+                <!--android:maxLength="8"-->
+                <!--android:singleLine="true"-->
+                <!--android:id="@+id/et_car_number"-->
+                <!--android:textSize="13sp"-->
+                <!--android:background="@null"-->
+                <!--android:hint="@string/choose_car_number"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <com.parkingwang.keyboard.view.InputView
+                style="@style/PWKInputViewStyle"
+                android:layout_marginTop="@dimen/x10"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginLeft="@dimen/x10"
+                android:id="@+id/input_view"
+                app:pwkInputTextSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x60"/>
+        </LinearLayout>
+        <!--<Button-->
+            <!--android:id="@+id/btn_switch"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:text="更换为新能源车牌号"-->
+            <!--android:background="@drawable/btn_next_square"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp" />-->
+
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:text="@string/info_tip"
+            android:textSize="10.5sp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_next"
+            android:textColor="@color/white"
+            android:text="@string/next"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:background="@drawable/btn_next_square"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x40" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

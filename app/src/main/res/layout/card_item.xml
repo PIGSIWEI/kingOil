@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_marginRight="@dimen/x25"
+    android:layout_marginLeft="@dimen/x25"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/x10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/card_item_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/card_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x190"
+            >
+
+            <ImageView
+                android:id="@+id/card_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:id="@+id/card_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/x10">
+            <TextView
+                android:id="@+id/tv_oil_tip"
+                android:layout_centerHorizontal="true"
+                android:text="@string/oil_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/x5"
+                android:layout_below="@id/tv_oil_tip"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/card_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="油客来四号站"
+                android:textColor="#111"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x6"
+                android:id="@+id/card_other_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_user_name"
+                android:paddingBottom="@dimen/x16"
+                android:text="广东省天河区油客来大厦104"
+                android:textColor="#888" />
+            <ImageView
+                android:layout_marginRight="@dimen/x2"
+                android:layout_toLeftOf="@id/card_other_description"
+                android:background="@drawable/icon_location"
+                android:layout_marginTop="@dimen/x4"
+                android:id="@+id/iv_location"
+                android:layout_below="@id/card_user_name"
+                android:layout_width="@dimen/x25"
+                android:layout_height="@dimen/x25" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="@dimen/x20"
+                android:id="@+id/btn_this_oil"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_weight="1"
+                android:background="@drawable/oil_confirm_circle"
+                android:text="@string/oil_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x35" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

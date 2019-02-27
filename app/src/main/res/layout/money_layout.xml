@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_title_include">
+
+    </include>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/x15"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:background="@drawable/icon_money"
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25" />
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/et_oil_money"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginRight="@dimen/x70"
+            android:layout_marginLeft="@dimen/x70"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:hint="@string/oil_msg4"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_oil_price"
+            android:visibility="invisible"
+            android:layout_marginRight="@dimen/x10"
+            android:text="L"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_litre"
+            android:text="coutry"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_discountMoney"
+            android:textColor="@color/red"
+            android:text="money"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_coupon"
+        android:clickable="true"
+        android:background="@drawable/ll_btn_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:text="@string/choose_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_coupon_name"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_gravity="center"
+            android:text="@string/text_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/icon_right"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bill"
+        android:background="@drawable/ll_btn_square"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:text="@string/bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bill_name"
+            android:layout_marginRight="@dimen/x5"
+            android:layout_gravity="center"
+            android:text="@string/text_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/icon_right"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20" />
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_confirm"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        android:textColor="@color/white"
+        android:background="#C3BAB0"
+        android:text="@string/confirm"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40" />
+</LinearLayout>

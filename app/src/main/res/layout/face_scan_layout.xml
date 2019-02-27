@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/activity_title_include"></include>
+    <RelativeLayout
+        android:layout_below="@id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/x50">
+
+        <com.ruoyu.pigroad.myapplication.Widget.TexturePreviewView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_below="@id/ll_title"
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+
+
+    <ImageView
+        android:id="@+id/success_image"
+        android:layout_width="@dimen/x45"
+        android:layout_height="@dimen/x45"
+        android:src="@drawable/icon_success"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/texture_view"
+        android:scaleType="fitCenter"
+        android:layout_width="160dp"
+        android:layout_height="160dp"/>
+
+    <com.ruoyu.pigroad.myapplication.Widget.FaceRoundView
+        android:layout_below="@id/ll_title"
+        android:id="@+id/rect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/closeIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/detect_close" />
+</RelativeLayout>

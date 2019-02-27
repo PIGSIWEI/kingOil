@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_title_include">
+
+    </include>
+
+    <LinearLayout
+        android:id="@+id/ll_add_bill"
+        android:clickable="true"
+        android:background="@drawable/ll_btn_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@drawable/icon_add"
+            android:layout_width="@dimen/x23"
+            android:layout_height="@dimen/x23" />
+
+        <TextView
+            android:textColor="@color/title_color"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_gravity="center"
+            android:text="@string/add_bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bill"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/x20"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

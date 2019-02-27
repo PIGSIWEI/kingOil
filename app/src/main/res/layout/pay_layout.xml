@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_title_include"></include>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_oil_img"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x60" />
+        <TextView
+            android:id="@+id/tv_oil_name"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@id/iv_oil_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_oil_money"
+            android:textColor="@color/red"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_below="@id/tv_oil_name"
+            android:layout_toRightOf="@id/iv_oil_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_oil_type"
+            android:textColor="@color/title_color"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_below="@id/tv_oil_name"
+            android:layout_toRightOf="@id/tv_oil_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_wx"
+        android:clickable="true"
+        android:background="@drawable/ll_btn_square"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_wx_pay"
+            android:background="@drawable/icon_wx_pay"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20" />
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_wx_pay"
+            android:text="@string/wx_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@drawable/icon_un_check"
+            android:enabled="false"
+            android:id="@+id/rb_wx"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25" />
+    </RelativeLayout>
+
+    <ImageView
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_ali"
+        android:clickable="true"
+        android:background="@drawable/ll_btn_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_ali_pay"
+            android:background="@drawable/icon_ali_pay"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20" />
+        <TextView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_ali_pay"
+            android:text="@string/ali_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@drawable/icon_un_check"
+            android:enabled="false"
+            android:id="@+id/rb_ali"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/x25"
+            android:layout_height="@dimen/x25" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/btn_next_square"
+        android:textColor="@color/white"
+        android:text="确认支付"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x35" />
+
+    <Button
+        android:id="@+id/btn_face"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/btn_next_square"
+        android:textColor="@color/white"
+        android:text="@string/face_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x35" />
+
+</LinearLayout>

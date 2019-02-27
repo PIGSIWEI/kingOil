@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+        <ImageView
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp" />
+       <LinearLayout
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_gravity="center"
+               android:id="@+id/ll_oil"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:id="@+id/iv_oil"
+                   android:layout_marginTop="@dimen/x5"
+                   android:background="@drawable/main_icon_oil"
+                   android:layout_width="@dimen/x20"
+                   android:layout_height="@dimen/x20" />
+               <TextView
+                   android:id="@+id/tv_oil"
+                   android:layout_marginBottom="@dimen/x5"
+                   android:layout_marginTop="@dimen/x3"
+                   android:textSize="12sp"
+                   android:text="@string/oil_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_yjjy"
+               android:orientation="vertical"
+               android:gravity="center"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:layout_marginTop="@dimen/x3"
+                   android:background="@drawable/main_icon_yjjy"
+                   android:layout_width="@dimen/x27"
+                   android:layout_height="@dimen/x27" />
+                <TextView
+                    android:layout_marginBottom="@dimen/x5"
+                    android:layout_marginTop="@dimen/x3"
+                    android:text="一键加油"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/ll_mine"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <ImageView
+                   android:id="@+id/iv_mine"
+                   android:layout_marginTop="@dimen/x5"
+                   android:background="@drawable/main_icon_mine"
+                   android:layout_width="@dimen/x20"
+                   android:layout_height="@dimen/x20" />
+               <TextView
+                   android:id="@+id/tv_mine"
+                   android:layout_marginBottom="@dimen/x5"
+                   android:layout_marginTop="@dimen/x3"
+                   android:textSize="12sp"
+                   android:text="@string/mine"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+       </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_title_include"></include>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x30"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/x3"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="@dimen/x10"
+        android:text="@string/face_verify_tips"
+        android:textColor="#3d3d3d"
+        android:textSize="18sp" />
+    <ImageView
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x150"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x25"
+        android:background="@drawable/photo_face_intro" />
+    <Button
+        android:enabled="false"
+        android:clickable="false"
+        android:id="@+id/btn_face_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x46"
+        android:background="@drawable/complete_btn_selector"
+        android:padding="@dimen/x5"
+        android:text="注册人脸"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_btn"
+    android:clickable="true"
+    android:background="@drawable/ll_btn_square"
+    android:layout_marginBottom="@dimen/x5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x100">
+
+    <ImageView
+        android:scaleType="center"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_oil_img"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/x70"
+        android:layout_marginLeft="@dimen/x10"
+         />
+
+    <TextView
+        android:id="@+id/tv_oil_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_toRightOf="@id/iv_oil_img"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_oil_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_oil_name"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_toRightOf="@id/iv_oil_img"
+        android:text="adress" />
+
+    <ImageView
+        android:id="@+id/iv_wx"
+        android:layout_width="@dimen/x15"
+        android:layout_height="@dimen/x15"
+        android:layout_below="@id/tv_oil_address"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_toRightOf="@id/iv_oil_img"
+        android:background="@drawable/icon_wx" />
+
+    <ImageView
+        android:id="@+id/iv_ali"
+        android:layout_marginLeft="@dimen/x5"
+        android:layout_width="@dimen/x15"
+        android:layout_height="@dimen/x15"
+        android:layout_below="@id/tv_oil_address"
+        android:layout_marginTop="@dimen/x5"
+        android:layout_toRightOf="@id/iv_wx"
+        android:background="@drawable/icon_ali" />
+
+    <TextView
+        android:textSize="13sp"
+        android:id="@+id/tv_jln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x20"
+        android:text="距离你" />
+
+    <TextView
+        android:textSize="13sp"
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_jln"
+        android:layout_marginRight="@dimen/x10"
+        android:layout_marginTop="@dimen/x5"
+        android:text="distans"
+        android:textColor="@color/title_color" />
+</RelativeLayout>

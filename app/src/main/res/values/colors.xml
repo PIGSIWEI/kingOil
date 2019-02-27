@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_background">#F2F2F2</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#32CD32</color>
+    <color name="title_color">#32CD32</color>
+    <color name="drak_bule">#011935</color>
+    <color name="green_bule">#00343F</color>
+    <color name="bule">#1DB0B8</color>
+    <color name="bule_out">#37C6C0</color>
+    <color name="out_bule">#D0E9FF</color>
+    <color name="white">#ffffff</color>
+    <color name="line_color">#cdcdcd</color>
+    <color name="btn_un_active">#D9D9D9</color>
+    <color name="red">#FF0000</color>
+    <color name="text_hint_color">#969696</color>
+    <color name="framlaylout_color">#00000000</color>
+    <color name="activty_backgroud">#EAEAEA</color>
+    <color name="press_color">#055f05</color>
+    <color name="keyboard_press_color">#b9afa9</color>
+    <color name="tag_color">#40FFFFFF</color>
+    <color name="coupon_color">#D89E29</color>
+    <color name="coupon_used_color">#999999</color>
+    <color name="grey">#ebebeb</color>
+    <color name="darkgrey">#C0C0C0</color>
+    <color name="blue">#4287FF</color>
+    <color name="gray">#ddd</color>
+    <color name="darkyellow">#FFCC33</color>
+
+    <color name="gray_black">#88000000</color>
+    <color name="soft_black">#cc000000</color>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#7f000000"
+    android:id="@+id/rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.stone.card.library.CardSlidePanel
+        android:layout_centerInParent="true"
+        android:id="@+id/image_slide_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+         />
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_marginBottom="@dimen/x35"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_close"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30" />
+
+</RelativeLayout>

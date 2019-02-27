@@ -1,0 +1,339 @@
+<resources>
+    <string name="app_name">油客来</string>
+    <string name="phone_inspection">手机验证</string>
+    <string name="login_tip1">请输入您的手机号码，</string>
+    <string name="login_tip2">登录或注册您的油客来账号</string>
+    <string name="edit_hint_phone">请输入手机号</string>
+    <string name="edit_hint_code">请输入验证码</string>
+    <string name="btn_get_code">获取验证码</string>
+    <string name="btn_start">开始</string>
+    <string name="oil_tip">请确认您是否在这个油站</string>
+    <string name="oil_confirm">我确认在这家油站</string>
+    <string name="oil_refuse">不是</string>
+    <string name="oil_msg1">油枪:</string>
+    <string name="oil_msg2">打印发票</string>
+    <string name="oil_money">金额</string>
+    <string name="oil_bill_type">抬头类型</string>
+    <string name="oil_bill_name">单位名称</string>
+    <string name="oil_bill_number">税号</string>
+    <string name="oil_company">单位</string>
+    <string name="oil_person">个人</string>
+    <string name="oil_company_hint">请输入单位名称</string>
+    <string name="oil_person_hint">请输入纳税人识别号</string>
+    <string name="default_use">默认使用</string>
+    <string name="wx_pay">微信支付</string>
+    <string name="ali_pay">支付宝支付</string>
+    <string name="face_pay">人脸支付</string>
+    <string name="oil_msg3">在这输入油枪</string>
+    <string name="oil_msg4">在这输入加油金额</string>
+    <string name="confirm">确认</string>
+    <string name="choose_coupon">选择优惠券</string>
+    <string name="bill">发票</string>
+    <string name="money_activity_title">输入金额</string>
+    <string name="text_null">暂无</string>
+    <string name="choose_bill_title">请选择你要打印的发票抬头</string>
+    <string name="choose_bill_none">不需要打印发票</string>
+    <string name="add_bill_title">添加发票抬头</string>
+    <string name="no_bill">不要发票</string>
+    <string name="bill_title">发票抬头</string>
+    <string name="must_input">必填</string>
+    <string name="bill_number">纳税人号</string>
+    <string name="bill_number_tip">若单位报销务必填写此项</string>
+    <string name="save">保存</string>
+    <string name="address_delete">删除地址</string>
+    <string name="address_edit">编辑地址</string>
+    <string name="confirm_deletion">确认删除吗？</string>
+    <string name="can_use_coupon">当前可使用的优惠券</string>
+    <string name="pirate_car">私家车司机</string>
+    <string name="spending">消费记录</string>
+    <string name="bill_manager">发票管理</string>
+    <string name="car">专车认证</string>
+    <string name="integral_record">积分记录</string>
+    <string name="integral_shop">积分商城</string>
+    <string name="uncertified">未认证</string>
+    <string name="has_pay">已消费</string>
+    <string name="all_pay">共支付</string>
+    <string name="has_save">已节省</string>
+    <string name="record_detail">记录明细</string>
+    <string name="record_null">当前没有消费记录</string>
+    <string name="choose_type">选择类型</string>
+    <string name="input_info">填写信息</string>
+    <string name="upload_img">上传截图</string>
+    <string name="confirm_data">提交资料</string>
+    <string name="choose_car_type">请选择您要认证的车辆类型</string>
+    <string name="next">下一步</string>
+    <string name="identification_car">认证车型</string>
+    <string name="phone">手机号</string>
+    <string name="phone_ispass">手机已验证</string>
+    <string name="other_car">其他特殊单位用户</string>
+    <string name="be_city">所在城市</string>
+    <string name="car_number">车牌号</string>
+    <string name="choose_car_number">请选择车牌号</string>
+    <string name="info_tip">*手机号和车牌号严格保密，仅用于油站对专车身份的真实性</string>
+    <string name="confirm_finsh">资料提交完成</string>
+    <string name="data_tip">您的资料已经提交，我们将在1个工作日内完成审</string>
+    <string name="data_tip2">核，请耐心等待！</string>
+    <string name="return_vip">返回会员中心</string>
+    <string name="click_upload">点击上传</string>
+    <string name="coupon_null">当前可使用的优惠券</string>
+    <string name="coupon_can">可使用</string>
+    <string name="coupon_over">已过期</string>
+    <string name="coupon_used">已使用</string>
+    <string name="coupon_manager">优惠券管理</string>
+    <string name="face_scan">人脸注册</string>
+    <string name="use">立即使用</string>
+    <string name="use_tip2">（2）优惠券可用时段为00:00:00到23:59:59；</string>
+    <string name="use_tip3">（3）单笔订单只能适用一张优惠券，每天最多使用一张；</string>
+    <string name="use_tip4">（4）如遇退款，优惠券金额不可退。</string>
+    <string name="login_exit">退出登录</string>
+    <string name="oil_name">油站</string>
+    <string name="mine">我的</string>
+    <string name="loading">Loading</string>
+    <string name="pay_type">支付方式</string>
+    <string name="face_verify_tips">请正对手机,保证光源充足</string>
+
+        <!--高德地图String-->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_title">示例代码</string>
+    <string name="base_function">基本功能</string>
+    <string name="hud_title">HUD显示</string>
+    <string name="extend_title">扩展功能</string>
+    <string name="extend_navi_navi">自定义导航</string>
+
+    <string name="navibar_title">路径规划</string>
+    <string name="navi_car">驾车</string>
+    <string name="navi_foot">步行</string>
+    <string name="start_hud_navi">HUD显示</string>
+    <string name="complex_function">综合展示</string>
+
+
+    <string name="navi_empty_car">"驾   车"</string>
+    <string name="navi_empty_foot">"步   行"</string>
+    <string name="navi_start">"起    点"</string>
+    <string name="navi_middle">途经点</string>
+    <string name="navi_end">"终    点"</string>
+    <string name="navi_strategy">"策    略"</string>
+    <string name="navi_route">路径规划</string>
+    <string name="navi_navi">模拟导航</string>
+    <string name="start_navi_navi">实时导航</string>
+    <string name="navi_strategy_speed">速度最快</string>
+    <string name="navi_strategy_cost">避免收费</string>
+    <string name="navi_strategy_distance">距离最短</string>
+    <string name="navi_strategy_nohighway">不走高速快速路</string>
+    <string name="navi_strategy_timenojam">时间最短且躲避拥堵</string>
+    <string name="navi_strategy_costnojam">避免收费且躲避拥堵</string>
+
+    <string name="theme_blue">经典蓝</string>
+    <string name="theme_pink">可爱粉</string>
+    <string name="theme_white">简约白</string>
+
+    <string name="setting">设置</string>
+    <string name="day">白天</string>
+    <string name="night">夜间</string>
+    <string name="yes">"  是  "</string>
+    <string name="no">"  否  "</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="daynightmode">"昼夜模式    "</string>
+    <string name="deviationrecalculation">"偏航重算    "</string>
+    <string name="jamrecalculation">"拥堵重算    "</string>
+    <string name="trafficbroadcast">"交通播报    "</string>
+    <string name="camerabroadcast">摄像头播报</string>
+    <string name="screenon">"屏幕常亮    "</string>
+    <string name="routeshow">线路展示</string>
+    <string name="tapmap">点击地图设置</string>
+    <string name="starttapmap">我的位置（可点击地图设置）</string>
+    <string name="walkdescription">步行状态不可用</string>
+    <string name="routeinfo">全程   --公里/--分钟    收费 --元</string>
+    <string name="routeinfo_1">全程 </string>
+    <string name="routeinfo_2">公里/</string>
+    <string name="routeinfo_3">"分钟    收费"</string>
+    <string name="routeinfo_4">元</string>
+    <string name="routeinfo_default">--</string>
+    <string name="app_id">输入您讯飞的appid</string>
+    <string name="mypoistion">我的位置</string>
+    <string name="mappoistion">地图点选</string>
+    <string name="positioninfo">位置信息</string>
+
+    <string-array name="preference_values_tts_role">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>vixy</item>
+        <item>vixq</item>
+        <item>vixf</item>
+        <item>vixm</item>
+        <item>vixl</item>
+        <item>vixr</item>
+        <item>vixyun</item>
+        <item>vixk</item>
+        <item>vixqa</item>
+        <item>vixying</item>
+        <item>vixx</item>
+        <item>vinn</item>
+        <item>vils</item>
+    </string-array>
+
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_title_tts_speed">语速</string>
+    <string name="preference_default_tts_speed">50</string>
+    <string name="preference_dialog_title_tts_speed">选择语速</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_title_tts_volume">音量</string>
+    <string name="preference_default_tts_volume">50</string>
+    <string name="preference_dialog_title_tts_volume">选择音量</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_title_tts_pitch">语调</string>
+    <string name="preference_default_tts_pitch">50</string>
+    <string name="intell_bd_title">智能播报</string>
+
+    <string name="poi_input_type_start">从</string>
+    <string name="poi_input_type_dest">到</string>
+    <string name="poi_input_type_mid">经</string>
+
+    <string name="navi_guide_from">出发</string>
+    <string name="navi_guide_end">到达终点</string>
+
+    <string name="drawer_open">开</string>
+    <string name="drawer_close">关</string>
+
+    <!-- 首页索引 -->
+    <string name="navi_ui">导航组件<font color='red'>(新)</font></string>
+    <string name="blank"></string>
+
+    <string name="navi_start_end_poi_calculate_title">起终点算路</string>
+    <string name="navi_start_end_poi_calculate_desc">包含起点和终点的组件算路</string>
+    <string name="navi_end_poi_calculate_title">无起点算路</string>
+    <string name="navi_end_poi_calculate_desc">无起点有终点的组件算路</string>
+    <string name="navi_bywayof_poi_calculate_title">途经点算路</string>
+    <string name="navi_bywayof_poi_calculate_desc">有途经点的组件算路</string>
+    <string name="navi_ui_navi_title">组件直接导航</string>
+    <string name="navi_ui_navi_desc">组件直接导航</string>
+    <string name="navi_ui_component_theme_title">起始点算路（白色主题）</string>
+    <string name="navi_ui_component_theme_desc">起始点算路（白色主题）</string>
+
+    <string name="navi_route_line">路径规划</string>
+    <string name="navi_route_driver_title">驾车路径规划</string>
+    <string name="navi_route_driver_desc">驾车路径规划</string>
+    <string name="navi_route_walk_title">步行路径规划</string>
+    <string name="navi_route_walk_desc">步行路径规划</string>
+    <string name="navi_route_ride_title">骑行路径规划</string>
+    <string name="navi_route_ride_desc">骑行路径规划</string>
+    <string name="navi_route_trunk_title">货车导航路径规划</string>
+    <string name="navi_route_trunk_desc">货车导航路径规划</string>
+
+    <string name="navi_type">多类型导航</string>
+    <string name="navi_type_gps_title">实时导航</string>
+    <string name="navi_type_gps_desc">实时导航</string>
+    <string name="navi_type_inner_voice">内置语音导航</string>
+    <string name="navi_type_trunk">货车导航</string>
+
+    <string name="navi_type_emu_title">模拟导航</string>
+    <string name="navi_type_emu_desc">模拟导航</string>
+    <string name="navi_type_intelligent_title">智能巡航</string>
+    <string name="navi_type_intelligent_desc">智能巡航</string>
+    <string name="navi_type_hud_title">HUD导航</string>
+    <string name="navi_type_hud_desc">HUD导航</string>
+
+    <string name="navi_ui_custom">导航UI自定义</string>
+    <string name="navi_ui_custom_car_icon">自定义车标</string>
+    <string name="navi_ui_custom_route">自定义路线UI</string>
+    <string name="navi_ui_custom_route_style">自定义路线纹理</string>
+    <string name="navi_ui_custom_trun_across_tip">自定义路口转向提示</string>
+    <string name="navi_ui_custom_northmode">正北模式</string>
+    <string name="navi_ui_custom_wholescan_button">自定义全览模式</string>
+    <string name="navi_ui_custom_compass">自定义指南针</string>
+    <string name="navi_ui_custom_traffic_button">自定义路况按钮</string>
+    <string name="navi_ui_custom_zoom_button">自定义放大缩小按钮</string>
+    <string name="navi_ui_custom_across_overlay">自定义路口放大图</string>
+    <string name="navi_ui_custom_traffic_bar">自定义导航光柱</string>
+    <string name="navi_ui_custom_traffic_bar_new">自定义导航光柱(new)</string>
+    <string name="navi_ui_custom_route_select">自定义道路选择</string>
+
+
+    <string name="navi_custom_all">导航完全自定义示例</string>
+    <string name="navi_custom_car_route">自车改变位置和绘制路线示例</string>
+    <string name="navi_custom_road_distance_nexttip">路名、剩余距离、转向图标示例</string>
+    <string name="navi_custom_traffic_bar">绘制导航路况条示例</string>
+    <string name="navi_custom_route_way">自定义车道信息示例</string>
+    <string name="navi_custom_crossing">路口放大图示例</string>
+    <string name="navi_custom_camera">摄像头违章摄影示例</string>
+    <string name="navi_custom_navi">各组件整合导航示例</string>
+
+    <string name="navi_expand">导航扩展</string>
+    <string name="navi_expand_set_gps_data">传入GPS数据导航</string>
+    <string name="navi_expand_route_detail">展示导航路径详情</string>
+    <string name="navi_expand_switch_road">主辅路切换</string>
+    <string name="navi_expand_iflyt_voice">科大讯飞语音集成</string>
+
+    <!--//百度人脸识别-->
+    <string name="detect_no_face">未检测到人脸</string>
+    <string name="detect_face_in">把脸移入框内</string>
+    <string name="detect_zoom_in">手机拿近一点</string>
+    <string name="detect_zoom_out">手机拿远一点</string>
+    <string name="detect_head_up">头抬高些</string>
+    <string name="detect_head_down">头放低些</string>
+    <string name="detect_head_left">向左调整下头部角度</string>
+    <string name="detect_head_right">向右调整下头部角度</string>
+    <string name="detect_occ_face">脸部有遮挡</string>
+    <string name="detect_occ_left_eye">左眼有遮挡</string>
+    <string name="detect_occ_right_eye">右眼有遮挡</string>
+    <string name="detect_occ_nose">鼻子有遮挡</string>
+    <string name="detect_occ_mouth">嘴部有遮挡</string>
+    <string name="detect_left_contour">左脸颊有遮挡</string>
+    <string name="detect_right_contour">右脸颊有遮挡</string>
+    <string name="detect_chin_contour">下巴有遮挡</string>
+    <string name="detect_low_light">光线再亮些</string>
+    <string name="detect_keep">请握稳手机，视线平视手机</string>
+    <string name="detect_standard">请正对手机</string>
+    <string name="detect_timeout">检测超时</string>
+    <string name="liveness_eye">眨眨眼</string>
+    <string name="liveness_eye_left">请眨眨左边眼睛</string>
+    <string name="liveness_eye_right">请眨眨右边眼睛</string>
+    <string name="liveness_mouth">张张嘴</string>
+    <string name="liveness_head_left">向左缓慢转头</string>
+    <string name="liveness_head_right">向右缓慢转头</string>
+    <string name="liveness_head_left_right">摇摇头</string>
+    <string name="liveness_head_up">缓慢抬头</string>
+    <string name="liveness_head_down">缓慢低头</string>
+    <string name="liveness_good">非常好</string>
+    <string name="hint_move_into_frame">把脸移入框内</string>
+    <string name="hint_come_closer">再靠近一点儿</string>
+    <string name="hint_move_further">请离远一点儿</string>
+    <string name="hint_head_higher">头抬高些</string>
+    <string name="hint_head_down">头低一点</string>
+    <string name="hint_turn_left">向左转转</string>
+    <string name="hint_turn_right">向右转转</string>
+
+    <string name="hint_move_left">向左移动</string>
+    <string name="hint_move_up">向上移动</string>
+    <string name="hint_move_right">向右移动</string>
+    <string name="hint_move_down">向下移动</string>
+
+    <string name="hint_occlusion_in_left_eye">左眼有遮挡</string>
+    <string name="hint_occlusion_in_right_eye">右眼有遮挡</string>
+    <string name="hint_occlusion_in_nose">鼻子有遮挡</string>
+    <string name="hint_occlusion_in_mouth">嘴巴有遮挡</string>
+    <string name="hint_occlusion_in_left_cheek">左侧脸颊有遮挡</string>
+    <string name="hint_occlusion_in_right_cheek">右侧脸颊有遮挡</string>
+    <string name="hint_occlusion_in_chin">下颚有遮挡</string>
+    <string name="hint_occlusion_in_face">脸部有遮挡</string>
+
+    <string name="hint_light_low">光线再亮些</string>
+    <string name="hint_keep_still">请保持不动</string>
+    <string name="hint_timeout">检测超时</string>
+    <string name="hint_success">验证成功</string>
+    <string name="hint_very_good">非常好</string>
+
+    <string name="action_blink">眨眨眼</string>
+    <string name="action_blink_left_eye">请眨眨左边眼睛</string>
+    <string name="action_blink_right_eye">请眨眨右边眼睛</string>
+    <string name="action_open_mouth">张大嘴</string>
+    <string name="action_lean_head_left">向左摇头</string>
+    <string name="action_lean_head_right">向右摇头</string>
+    <string name="action_head_up">向上抬头</string>
+    <string name="action_head_down">向下低头</string>
+
+
+</resources>

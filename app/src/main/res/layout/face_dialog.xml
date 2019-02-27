@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginRight="@dimen/x10"
+    android:layout_marginLeft="@dimen/x10"
+    android:background="@drawable/relative_white_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_centerHorizontal="true"
+        android:text="你已经注册过人脸，无需再注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/tv"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x37"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/complete_btn_selector"
+        android:padding="@dimen/x5"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:clickable="false"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_below="@id/btn_confirm"
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x37"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/complete_btn_selector"
+        android:padding="@dimen/x5"
+        android:text="人脸更新"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

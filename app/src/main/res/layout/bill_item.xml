@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tv_bill_title"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:text="@string/no_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/x5"
+        android:layout_marginTop="@dimen/x2"
+        android:layout_marginLeft="@dimen/x10"
+        android:textSize="11sp"
+        android:layout_below="@id/tv_bill_title"
+        android:id="@+id/tv_bill_number"
+        android:text="bill_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioButton
+        android:id="@+id/rb"
+        android:clickable="false"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30" />
+
+    <ImageView
+        android:background="@color/line_color"
+        android:layout_below="@id/tv_bill_number"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp" />
+</RelativeLayout>

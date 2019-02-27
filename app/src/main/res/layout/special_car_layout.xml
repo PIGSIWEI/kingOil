@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/activty_backgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title_include">
+
+    </include>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="13sp"
+            android:textColor="@color/title_color"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_weight="1"
+            android:text="@string/choose_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_right_green"
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15" />
+        <TextView
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:text="@string/input_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_width="12dp"
+            android:layout_height="@dimen/x15"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_right" />
+        <TextView
+            android:textSize="13sp"
+
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:text="@string/upload_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@drawable/icon_right"
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15" />
+        <TextView
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:text="@string/confirm_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginLeft="@dimen/x10"
+        android:textSize="13sp"
+        android:text="@string/choose_car_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_next"
+            android:textColor="@color/white"
+            android:text="@string/next"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginBottom="@dimen/x5"
+            android:layout_marginTop="@dimen/x5"
+            android:background="@drawable/btn_next_square"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x37" />
+    </LinearLayout>
+</LinearLayout>
